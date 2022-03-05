@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+	--transparent: hsla(0, 0%, 100%, 0);
+	--font-lexa: 'Lexend Deca', sans-serif;
+	--font-bsd: 'Big Shoulders Display', cursive;
+	--font-lexa-weight: 400;
+	--font-bsd-weight:  700;
+}
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+body::-webkit-scrollbar{
+	display: none;
+}
+body{
+	font-size: 15px;
+	font-family: var(--font-lexa);
+	font-weight: var(--font-lexa-weight);
+	background-color: var(--very-light-gray);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	scrollbar-width: none;
+	overflow-y: scroll; 
+}
+.container{
+	max-width: 965px;
+	margin: 0 auto;
+}
+.card{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-radius: 11px;
+	overflow: hidden;
+	margin: 32px;
+}
+.box{
+	padding: 45px;
+}
+.box:first-child{
+	background-color: var(--bright-orange);
+}
+.box:nth-child(2){
+	background-color: var(--dark-cyan);
+}
+.box:last-child{
+	background-color: var(--very-dark-cyan);
+}
+.box h2{
+	color: var(--very-light-gray);
+	font-family: var(--font-bsd);
+	font-weight: var(--font-bsd-weight);
+	font-size: 35px;
+	text-transform: uppercase;
+}
+.box a{
+	background-color: var(--very-light-gray);
+	text-decoration: none;
+	border-radius: 25px;
+	padding: 10px 25px;
+	margin-top: 50px;
+	display: inline-block;
+	border: 2px solid var(--very-light-gray);
+	transition: all .5s ease;
+}
+.box:first-child a{
+	color: var(--bright-orange);
+}
+.box:nth-child(2) a{
+	color: var(--dark-cyan);
+}
+.box:last-child a{
+	color: var(--dark-cyan);
+}
+.box a:hover{
+	color: var(--very-light-gray);
+	background-color: var(--transparent);
+}
+.box p{
+	color: var(--transparent-white);
+	line-height: 1.7;
+}
+
+@media (max-width:  768px){
+	.card{
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 576px){
+	.box a{
+		margin-top: 10px;
+	}
+	.card{
+		margin: 32px 16px;
+	}
+}
