@@ -88,6 +88,10 @@ body{
 	color: var(--transparent-white);
 	line-height: 1.7;
 }
+.footer{
+	text-align: center;
+	padding: 20px 0;
+}
 
 @media (max-width:  768px){
 	.card{
