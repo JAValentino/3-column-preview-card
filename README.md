@@ -1,5 +1,5 @@
 Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
 
-Source Code: https://codepen.io/javalentino/pen/ExbMxMM
+Codepen: https://codepen.io/javalentino/pen/ExbMxMM
 
 Link: https://javalentino.github.io/3-column-preview-card/
