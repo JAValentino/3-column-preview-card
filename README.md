@@ -2,4 +2,4 @@ Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/3column-prev
 
 Codepen: https://codepen.io/javalentino/pen/ExbMxMM
 
-Link: https://javalentino.github.io/social-proof-section/
+Link: https://javalentino.github.io/3-column-preview-card/
